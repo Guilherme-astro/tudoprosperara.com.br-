@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tudo Prosperará Por Onde Você Andar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #f9d423, #ff8a00);
+      color: #333;
+      line-height: 1.7;
+      overflow: hidden;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    header {
+      padding: 60px 20px;
+    }
+    h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 3rem;
+      color: #fff;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+      margin-bottom: 15px;
+    }
+    h2 {
+      font-size: 1.8rem;
+      color: #fff;
+      margin: 20px 0;
+    }
+    p {
+      font-size: 1.2rem;
+      color: #fff;
+      margin: 15px 0;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+    }
+    .author {
+      font-weight: bold;
+      font-size: 1.4rem;
+      color: #fff;
+      letter-spacing: 1px;
+    }
+    .btn {
+      display: inline-block;
+      margin: 25px 15px;
+      padding: 15px 30px;
+      background: #000;
+      color: #ffdd00;
+      font-weight: bold;
+      text-transform: uppercase;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+    }
+    .cta-pix {
+      background: #00bfa5;
+      color: white;
+    }
+    .pix-symbol {
+      font-size: 2rem;
+      margin-right: 10px;
+    }
+    .donation {
+      margin-top: 40px;
+      padding: 20px;
+      background: rgba(0,0,0,0.2);
+      border-radius: 15px;
+      display: inline-block;
+      max-width: 600px;
+    }
+    .donation p {
+      font-size: 1.1rem;
+      margin: 10px 0;
+    }
+    footer {
+      margin-top: 60px;
+      padding: 20px;
+      color: #fff;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+
+    /* Notificação de doação ao vivo */
+    .live-notification {
+      position: fixed;
+      bottom: 30px;
+      right: -400px;
+      background: rgba(0,0,0,0.8);
+      color: #fff;
+      padding: 15px 20px;
+      border-radius: 12px;
+      font-size: 1rem;
+      font-weight: bold;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+      z-index: 1000;
+      transition: right 1.2s ease-in-out;
+    }
+    .live-notification.show {
+      right: 30px;
+    }
+    .live-notification::after {
+      content: "💰";
+      margin-left: 10px;
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2.3rem; }
+      h2 { font-size: 1.5rem; }
+      p { font-size: 1rem; }
+      .live-notification {
+        font-size: 0.9rem;
+        padding: 12px 16px;
+        max-width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NOTIFICAÇÃO AO VIVO -->
+  <div class="live-notification" id="liveAlert"></div>
+
+  <div class="container">
+
+    <header>
+      <h1>📚 TUDO PROSPERARÁ POR ONDE VOCÊ ANDAR</h1>
+      <p class="author">Por GUILHERME M. (mas não é exatamente Guilherme... é o GUIGUI da virada 💸)</p>
+
+      <h2>👉 Um livro sobre como ficar rico… mesmo antes de ter um centavo.</h2>
+      <p>Não somos ricos ainda. Mas estamos escrevendo o caminho.</p>
+      <p>Este livro nasceu no caderno de um sonho, na madrugada de quem decidiu que <strong>prosperidade não espera</strong> — ela se constrói passo a passo, ideia a ideia, atitude a atitude.</p>
+      <p>E agora? Agora você pode fazer parte disso. Antes mesmo de ser lançado.</p>
+    </header>
+
+    <section>
+      <h2>📖 SOBRE O LIVRO</h2>
+      <p><strong>"Tudo Prosperará Por Onde Você Andar"</strong> é mais que um manual financeiro. É um manifesto de mentalidade, disciplina, fé e ação. Um guia prático escrito por quem tá no processo — sem filtros, sem pose, só realidade.</p>
+      <p>Você vai descobrir:</p>
+      <ul style="color:#fff; text-align:left; display:inline-block; text-shadow: none; margin: 15px;">
+        <li>🔹 Como pensar como rico (mesmo com R$10 no bolso)</li>
+        <li>🔹 Hábitos diários que multiplicam oportunidades</li>
+        <li>🔹 Histórias reais de quem começou do zero</li>
+        <li>🔹 Estratégias simples de renda extra, investimento e mindset</li>
+        <li>🔹 E como a prosperidade começa dentro de você — antes do dinheiro chegar</li>
+      </ul>
+      <p><em>Este livro será feito <strong>JUNTO COM VOCÊ</strong>. Suas dúvidas, desafios e histórias podem entrar nele.</em></p>
+    </section>
+
+    <section>
+      <h2>🚀 QUERO ADQUIRIR O LIVRO!</h2>
+      <p>O livro ainda está em construção, mas já dá pra garantir sua cópia (física ou digital) e participar da jornada.</p>
+
+      <a href=" https://wa.me/5511912970228 " class="btn" target="_blank">💬 COMPRAR VIA ZAP</a>
+
+      <a href="#pix-section" class="btn cta-pix">💰 PAGAR VIA PIX</a>
+    </section>
+
+    <section id="pix-section">
+      <h2>💳 CHAVE PIX</h2>
+      <p><strong>CNPJ ou CPF:</strong> 526.098.268-18</p>
+      <p>Ou escaneie mentalmente… porque aqui o futuro já começou 😉</p>
+    </section>
+
+    <section class="donation">
+      <div class="pix-symbol">✨</div>
+      <h2>💡 Quer me ajudar a continuar?</h2>
+      <p>Estou começando. Tudo isso nasce do nada, com vontade, café e muita coragem.</p>
+      <p>Se esse projeto te inspira, qualquer valor via Pix me ajuda a seguir — e quem sabe, um dia, olhar pra trás e dizer: “foi aqui que tudo começou”.</p>
+      <a href="https://picpay.me/seunome " target="_blank" style="color:#00bfa5; font-weight:bold; text-decoration:underline;">👉 Clique aqui para doar via Pix (interação simbólica)</a>
+      <p><small>(Chave: 52609826818)</small></p>
+    </section>
+
+    <footer>
+      &copy; 2025 | Tudo Prosperará Por Onde Você Andar | Todos os direitos reservados.<br>
+      Projeto em construção por Guigui da Virada 💼🔥<br>
+      Site oficial: <strong>tudoprosperara.com.br</strong>
+    </footer>
+
+  </div>
+
+  <script>
+    // Lista de mensagens de doação fictícia (mas realistas)
+    const messages = [
+      "João de SP acaba de doar R$20,00!",
+      "Ana M. comprou o livro por R$50!",
+      "Carlos viu o futuro e apoiou com R$100!",
+      "Larissa entrou no grupo e doou R$30!",
+      "Marcos de BH acabou de garantir sua cópia!",
+      "Patrícia mandou R$70 pelo Pix — bora crescer juntos!",
+      "Rafael doou R$25 e já tá na lista VIP!",
+      "Juliana acredita nesse projeto e apoiou com R$40!"
+    ];
+
+    // Função para mostrar notificação
+    function showNotification() {
+      const alert = document.getElementById("liveAlert");
+      const randomMsg = messages[Math.floor(Math.random() * messages.length)];
+
+      alert.textContent = randomMsg;
+      alert.classList.add("show");
+
+      // Esconde depois de 4 segundos
+      setTimeout(() => {
+        alert.classList.remove("show");
+      }, 4000);
+    }
+
+    // Mostra notificação aleatória a cada 15-30 segundos
+    setInterval(() => {
+      if (Math.random() > 0.3) { // 70% de chance de aparecer
+        showNotification();
+      }
+    }, Math.random() * 10000 + 15000); // entre 15s e 25s
+
+    // Mostra uma notificação ao carregar a página (primeira impressão!)
+    window.onload = () => {
+      setTimeout(showNotification, 2000);
+    };
+  </script>
+
+</body>
+</html>
